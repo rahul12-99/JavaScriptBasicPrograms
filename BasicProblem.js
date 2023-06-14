@@ -1,5 +1,4 @@
-/*Enter 3 Numbers do following arithmetic operation and find the one that
-is maximum and minimum*/
+/*Enter 3 Numbers do following arithmetic operation */
 let x = prompt("Enter first number");
  
  let y = prompt("Enter second number");
