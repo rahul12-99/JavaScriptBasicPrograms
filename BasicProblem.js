@@ -1,34 +1,14 @@
-/* Write a program that reads 5 Random 3 Digit values and then outputs the minimum
-and the maximum value */
-
-let a = Math.floor(Math.random()*999);
-let b = Math.floor(Math.random()*999);
-let c = Math.floor(Math.random()*999);
-let d = Math.floor(Math.random()*999);
-let e = Math.floor(Math.random()*999);
-
-console.log("You Entered : "+a+" , "+b+" , "+c+" , "+d+" , "+e);
-//Maximum Value
-if(a>b && a>c && a>d && a>e) {
-    console.log("Maximum value is : "+a);
-}else if(b>c && b>d && b>e) {
-    console.log("Maximum value is : "+b);
-}else if(c>d && c>e) {
-    console.log("Maximum value is : "+c);
-}else if(d>e) {
-    console.log("Maximum value is : "+d);
-}else {
-    console.log("Maximum value is : "+e);
+var date = prompt("Enter date");
+var month = prompt("Enter month"); 
+if(month==3 && date>=20){
+    console.log("true");
 }
-//Minimum Value
-if(a<b && a<c && a<d && a<e) {
-    console.log("Minimum value is : "+a);
-}else if(b<c && b<d && b<e) {
-    console.log("Minimum value is : "+b);
-}else if(c<d && c<e) {
-    console.log("Minimum value is : "+c);
-}else if(d<e) {
-    console.log("Minimum value is : "+d);
-}else {
-    console.log("Minimum value is : "+e);
+else if(month==6 && (date<=20 && date>0)){
+    console.log("true");
+}
+else if((month>4 && month<6) && (date>0 && date<32)){
+    console.log("true");
+}
+else{
+    console.log("false"); 
 }
